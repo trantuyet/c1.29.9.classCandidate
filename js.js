@@ -24,8 +24,8 @@ function Candidate(_name, idi, dob, score) {
 
 let can1 = new Candidate( 'Nguyễn Thị Thu Uyên',101,"15/07/02",[7,8,9]);
 let can2 = new Candidate( 'Dương Hoài Thương',102,"21/05/02",[8,9,10]);
-let can3 = new Candidate( 'Lê Hoàng Đức',103,"12/04/02",[8,8,8.5]);
-can1.getAverageScore();
+let can3 = new Candidate( 'Lê Hoàng Đức',103,"12/04/98",[8,8,8.5]);
 can1.showInfor();
 can1.setScore(9,9,9);
-document.getElementById("p1").innerHTML = (can1.showInfor() + '<br>'+ can2.showInfor() + '<br>' +can3.showInfor() ) ;
+document.getElementById("p1").innerHTML = (can1.showInfor() + '<br>'+ can2.showInfor() + '<br>' +can3.showInfor() + '<br>' + can1.getAverageScore() + '<br>'+ can2.getAverageScore() + '<br>' +can3.getAverageScore() + '<br>') ;
+//document.getElementById("p1").innerHTML = () ;
